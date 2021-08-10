@@ -48,25 +48,25 @@
 
      // ******* BELOW ONLY LOOKY, NO TOUCH *******
      var wallet = getWalletfromPrivateKey(__PROVIDER_RONIN, privkey);
-     var graph = `https://axieinfinity.com/graphql-server-v2/graphql?query={axies(from:0,size:100,sort:IdAsc,criteria:{stages:[4]},owner:"${wallet.address}"){results{id,breedCount}}}`;
+     var graph = `https://axieinfinity.com/graphql-server-v2/graphql?query={axies(from:0,size:100,sort:IdAsc,criteria:{stages:[4]},owner:"${wallet.address}"){results{id,breedCount,auction{listingIndex}}}}`;
      var json = (await fetch(graph).then(response=>response.json()));
      var axies = json.data.axies.results;
      var contract = new ethers.Contract(__CONTRACT_AXIE, __ABI_AXIE, wallet);
      // start
      for (var i=0; i<axies.length; i++) {
-         if (axies[i].breedCount>=minBreed) {
-             try {
-                 var res = (await contract.safeTransferFrom(
-                     wallet.address,
-                     to,
-                     axies[i].id,
-                     { gasPrice: __GAS_PRICE, gasLimit: __GAS_LIMIT }
-                 ));
-                 console.log(`AXIE: ${axies[i].id} / BREED: ${axies[i].breedCount} / HASH: ${res.hash}`);
-                 (await sleep(sleepTime));
-             } catch (e) {
-                 console.log(`ERROR: ${e.reason}`);
-             };
+         if (axies[i].breedCount>=minBreed && axies[i].auction===null) {
+            try {
+                var res = (await contract.safeTransferFrom(
+                    wallet.address,
+                    to,
+                    axies[i].id,
+                    { gasPrice: __GAS_PRICE, gasLimit: __GAS_LIMIT }
+                ));
+                console.log(`AXIE: ${axies[i].id} / BREED: ${axies[i].breedCount} / HASH: ${res.hash}`);
+                (await sleep(sleepTime));
+            } catch (e) {
+                console.log(`ERROR: ${e.reason}`);
+            };
          };
      };
      return;
