@@ -1,5 +1,6 @@
 /*******
  * HOW TO USE
+ * - !MAKE SURE TO USE THE CORRECT PACKAGE VERSIONS!
  * - install node and deps (ethers, ethers-utils, fetch)
  * - fill section marked with CONFIG below
  * - run in console: node migrateaxies.js
