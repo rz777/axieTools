@@ -1,9 +1,9 @@
 /*******
- * HOW TO USE
- * - !MAKE SURE TO USE THE CORRECT PACKAGE VERSIONS!
+ * ------- HOW TO USE -------
+ * !MAKE SURE TO USE THE CORRECT PACKAGE VERSIONS!
  * - install node and deps (ethers, ethers-utils, fetch)
  * - fill section marked with CONFIG below
- * - run in console: node migrateaxies.js
+ * - run in console via node
  * - errors like nonce or replacement are normal because Ronin is so stable
  * - run multiple times, wait couple minutes between execution
  *******/
