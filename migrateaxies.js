@@ -1,6 +1,5 @@
 /*******
  * HOW TO USE
- * - !BE AWARE THIS SCRIPT CURRENTLY _DOES_NOT_ CHECK FOR AUCTIONED AXIES!
  * - install node and deps (ethers, ethers-utils, fetch)
  * - fill section marked with CONFIG below
  * - run in console: node migrateaxies.js
