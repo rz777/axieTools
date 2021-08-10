@@ -16,9 +16,8 @@
                       ▀▀▀▀▀▀▄▄▄▄▄▄▄▀▀              · · · · · · · π
 
          
-         tested on:
-         razor@ Linux Ultron 5.4.0-80-generic 
-         ├── Ubuntu 20.04.2 LTS
+         razor@ linux ultron 5.4.0-80-generic 
+         ├── ubuntu 20.04.2 LTS
          ├── node v15.3.0
          ├── cron@1.8.2
          ├── discord.js@12.5.3
