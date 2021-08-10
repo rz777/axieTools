@@ -62,11 +62,11 @@
                      axies[i].id,
                      { gasPrice: __GAS_PRICE, gasLimit: __GAS_LIMIT }
                  ));
+                 console.log(`AXIE: ${axies[i].id} / BREED: ${axies[i].breedCount} / HASH: ${res.hash}`);
+                 (await sleep(sleepTime));
              } catch (e) {
                  console.log(`ERROR: ${e.reason}`);
              };
-             console.log(`AXIE: ${axies[i].id} / BREED: ${axies[i].breedCount} / HASH: ${res.hash}`);
-             (await sleep(sleepTime));
          };
      };
      return;
