@@ -41,5 +41,5 @@
                                     /\  /\
                                    /__\/__\
                                    
-           GREETZ·ONEDAYPLAY·MAXBRAND·SEUCHENHUND·EXPLORER·APAWITAN
+            GREETZ·ONEDAYPLAY·MAXBRAND·SEUCHENHUND·EXPLORER·APAWITAN
 ```
