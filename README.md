@@ -53,10 +53,10 @@
 
                                    
                                    
-                                      /\
-                        Razor 1911   /__\   Since 1977
-                                    /\  /\
-                                   /__\/__\
+                                        /\
+                          Razor 1911   /__\   Since 1977
+                                      /\  /\
+                                     /__\/__\
                                    
-            GREETZ·ONEDAYPLAY·MAXBRAND·SEUCHENHUND·EXPLORER·APAWITAN
+              GREETZ·ONEDAYPLAY·MAXBRAND·SEUCHENHUND·EXPLORER·APAWITAN
 ```
