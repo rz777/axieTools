@@ -1,4 +1,9 @@
 /*******
+ * ------- DISCLAIMER -------
+ *
+ * THIS IS _NOT_ A SPOONFEED SCRIPT. READ AND UNDERSTAND HOW IT WORKS FIRST.
+ * THIS SCRIPT WILL BURN ALL AXIES FROM A GIVEN WALLET. THERE ARE NO FILTERS ACTIVE.
+ *
  * ------- HOW TO USE -------
  * !MAKE SURE TO USE THE CORRECT PACKAGE VERSIONS!
  * - install node and deps (web3, ethers, ethers-utils, fetch)
@@ -6,6 +11,7 @@
  * - run in console via node
  * - errors like nonce or replacement are normal because Ronin is so stable
  * - run multiple times, wait couple minutes between execution
+ *
  *******/
 // ******* CONFIG *******
     // sleep timer, recommended minimum 11000 (3 blocks), better use 31000 (10 blocks+)
